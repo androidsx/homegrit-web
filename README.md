@@ -1,9 +1,15 @@
 Rails Stripe Coupons
 ================
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
 Receive in-home therapy from the best clinical psychologists of your community at your convenience.
+
+3rd party services used
+-------------
+
+- Stripe: androidsx@androidsx.com
+- Segment.io: androidsx@androidsx.com
+- Heroku
+     - [Dev machine](https://homegrit-web-development.herokuapp.com/(https://homegrit-web-development.herokuapp.com/)
 
 Initial requirements
 -------------
@@ -26,12 +32,6 @@ Most likely it will end up being these commands:
 6. `gem install rails -v 4.2.0 --no-ri --no-rdoc`
 
 
-3rd party services
--------------
-
-- Stripe: androidsx@androidsx.com
-- Segment.io: androidsx@androidsx.com
-
 Setup
 -------------
 
@@ -47,11 +47,13 @@ Run
 
 Deployment
 ------------
-We use heroku, so use (this guide)[https://devcenter.heroku.com/articles/getting-started-with-rails4] to setup your account.
+We use heroku, so use [this guide](https://devcenter.heroku.com/articles/getting-started-with-rails4) to setup your account.
 
-Add the heroku remote `heroku git:remote -a homegrit-web-development` to the machine of development. Then, `git push heroku master` will do the rest.
+Add the heroku remote `heroku git:remote -a homegrit-web-development` to be able to push to our `production` today. Then, `git push heroku master` will do the rest.
 
-Open the logs with `heroku logs` (or with papertrail `heroku addons:open papertrail`)
+Open the logs with `heroku logs` (or with papertrail `heroku addons:open papertrail`).
+
+In the near future, we should setup a `staging` machine using (this guide)[https://devcenter.heroku.com/articles/multiple-environments], and be able to promote.
 
 ### Deployment in a new machine ###
 
