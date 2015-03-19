@@ -3,7 +3,7 @@ Rails Stripe Coupons
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Receive in-home therapy from the best clinical psychologists of your community at your convenience/
+Receive in-home therapy from the best clinical psychologists of your community at your convenience.
 
 Initial requirements
 -------------
@@ -17,6 +17,7 @@ This application requires:
 Learn more how to install it [here](http://installrails.com/) or [Installing Rails](http://railsapps.github.io/installing-rails.html). But do NOT install Postgres via homebrew.
 
 Most likely it will end up being these commands:
+
 1. Install brew
 2. `curl -L https://get.rvm.io | bash -s stable`
 3. `rvm install 2.2.0`
@@ -45,7 +46,7 @@ Run
 
 Deployment
 ------------
-The app is deployed to heroku, so `git push heroku master` will do. Add any config variable with `heroku config:add MAILCHIMP_API_KEY='a6v34ggf23c123098765fcc6c996c540-us2' MAILCHIMP_LIST_ID='4x8bfgb034'
+The app is deployed to heroku, so `git push heroku master` will do. Add any config variable with `heroku config:add MAILCHIMP_API_KEY="" MAILCHIMP_LIST_ID=""`
 
 Open the logs with `heroku addons:open papertrail`
 
