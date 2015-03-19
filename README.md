@@ -36,6 +36,7 @@ Setup
 -------------
 
 1. `./script/bootstrap`
+2. Have a look at `config/secrets.yml` for admin user/passwords.
 
 Run
 -------------
