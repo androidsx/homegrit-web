@@ -47,9 +47,36 @@ Run
 
 Deployment
 ------------
-The app is deployed to heroku, so `git push heroku master` will do. Add any config variable with `heroku config:add MAILCHIMP_API_KEY="" MAILCHIMP_LIST_ID=""`
+We use heroku, so use (this guide)[https://devcenter.heroku.com/articles/getting-started-with-rails4] to setup your account.
 
-Open the logs with `heroku addons:open papertrail`
+Add the heroku remote `heroku git:remote -a homegrit-web-development` to the machine of development. Then, `git push heroku master` will do the rest.
+
+Open the logs with `heroku logs` (or with papertrail `heroku addons:open papertrail`)
+
+Deployment in a new machine
+===========
+
+Needed config vars in heroku that need to be done for every new machine:
+
+```heroku config:add \
+    MAILCHIMP_API_KEY="" \
+    MAILCHIMP_LIST_ID="" \
+    ADMIN_NAME="" \
+    ADMIN_EMAIL="" \
+    ADMIN_PASSWORD="" \
+    GMAIL_USERNAME="" \
+    GMAIL_PASSWORD="" \
+    DOMAIN_NAME="" \
+    STRIPE_API_KEY="" \
+    STRIPE_PUBLISHABLE_KEY="" \
+    SECRET_KEY_BASE=""
+```
+
+1. `git push heroku master`
+2. `heroku run rake db:migrate db:seed`
+3. [Scale properly](https://devcenter.heroku.com/articles/getting-started-with-rails4#visit-your-application)
+
+If the dynos crashed for whatever reason, you can force restart them manually: `heroku ps:restart`.
 
 
 Recreate the test DB
