@@ -53,7 +53,7 @@ Add the heroku remote `heroku git:remote -a homegrit-web-development` to be able
 
 Open the logs with `heroku logs` (or with papertrail `heroku addons:open papertrail`).
 
-In the near future, we should setup a `staging` machine using (this guide)[https://devcenter.heroku.com/articles/multiple-environments], and be able to promote.
+In the near future, we should setup a `staging` machine using [this guide](https://devcenter.heroku.com/articles/multiple-environments), and be able to promote.
 
 ### Deployment in a new machine ###
 
