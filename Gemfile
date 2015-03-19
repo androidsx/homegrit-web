@@ -20,6 +20,7 @@ gem 'pg'
 gem 'puma'
 gem 'stripe'
 gem 'sucker_punch'
+gem 'rails_admin'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
