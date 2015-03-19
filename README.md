@@ -55,9 +55,10 @@ Open the logs with `heroku logs` (or with papertrail `heroku addons:open papertr
 
 ### Deployment in a new machine ###
 
-Needed config vars in heroku that need to be done for every new machine:
+1. Add this config vars:
 
-```heroku config:add \
+```
+heroku config:add \
     MAILCHIMP_API_KEY="" \
     MAILCHIMP_LIST_ID="" \
     ADMIN_NAME="" \
@@ -71,9 +72,9 @@ Needed config vars in heroku that need to be done for every new machine:
     SECRET_KEY_BASE=""
 ```
 
-1. `git push heroku master`
-2. `heroku run rake db:migrate db:seed`
-3. [Scale properly](https://devcenter.heroku.com/articles/getting-started-with-rails4#visit-your-application)
+2. `git push heroku master`
+3. `heroku run rake db:migrate db:seed`
+4. [Scale properly](https://devcenter.heroku.com/articles/getting-started-with-rails4#visit-your-application)
 
 If the dynos crashed for whatever reason, you can force restart them manually: `heroku ps:restart`.
 
