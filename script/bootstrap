@@ -1,0 +1,8 @@
+#!/bin/bash
+
+createuser -h localhost -p 5432 -s -r homegritadmin
+bundle install
+rake db:create
+rake db:test:prepare
+rake db:migrate
+rake db:seed
