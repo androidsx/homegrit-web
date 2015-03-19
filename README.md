@@ -53,8 +53,7 @@ Add the heroku remote `heroku git:remote -a homegrit-web-development` to the mac
 
 Open the logs with `heroku logs` (or with papertrail `heroku addons:open papertrail`)
 
-Deployment in a new machine
-===========
+### Deployment in a new machine ###
 
 Needed config vars in heroku that need to be done for every new machine:
 
