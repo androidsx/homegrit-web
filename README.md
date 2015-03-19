@@ -9,7 +9,7 @@ Receive in-home therapy from the best clinical psychologists of your community a
 - Stripe: androidsx@androidsx.com
 - Segment.io: androidsx@androidsx.com
 - Heroku
-     - [Dev machine](https://homegrit-web-development.herokuapp.com/(https://homegrit-web-development.herokuapp.com/)
+     - [Dev machine](https://homegrit-web-development.herokuapp.com/)
 
 Initial requirements
 -------------
