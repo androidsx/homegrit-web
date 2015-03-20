@@ -1,4 +1,4 @@
-Rails Stripe Coupons
+HomeGrit web
 ================
 
 Receive in-home therapy from the best clinical psychologists of your community at your convenience.
