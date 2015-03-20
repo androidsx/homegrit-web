@@ -3,6 +3,7 @@
   <% if current_user.admin? %>
     <h3>Admin</h3>
     <p><%= link_to 'User count:', users_path %> <%= User.count %></p>
+    <p><%= link_to 'Coupons manager', coupons_path %> <%= Coupon.count %></p>
   <% else %>
     <h3>Download the book.</h3>
     <%= link_to 'Download PDF', products_path('product.pdf'), :class => 'btn btn-success btn-large' %>
