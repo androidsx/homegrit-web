@@ -3,6 +3,10 @@ HomeGrit web
 
 Receive in-home therapy from the best clinical psychologists of your community at your convenience.
 
+[ ![Codeship Status for androidsx/homegrit-web](https://codeship.com/projects/c8b830c0-b13c-0132-21e3-7a1c9d708e01/status?branch=master)](https://codeship.com/projects/69782)
+
+
+
 3rd party services used
 -------------
 
