@@ -2,6 +2,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import 'nprogress';
+@import 'nprogress-bootstrap';
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
