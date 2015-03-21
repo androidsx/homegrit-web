@@ -7,16 +7,16 @@ Receive in-home therapy from the best clinical psychologists of your community a
 
 
 
-3rd party services used
--------------
+3rd party services in use
+-------------------------
 
 - Stripe: androidsx@androidsx.com
 - Segment.io: androidsx@androidsx.com
 - Heroku
      - [Dev machine](https://homegrit-web-development.herokuapp.com/)
 
-Initial requirements
--------------
+Workspace  requirements
+-----------------------
 
 This application requires:
 
@@ -24,17 +24,17 @@ This application requires:
 - Rails 4.2.0
 - Postgres 9.x
 
-Learn more how to install it [here](http://installrails.com/) or [Installing Rails](http://railsapps.github.io/installing-rails.html). But do NOT install Postgres via homebrew.
+Most likely, it will be something like:
 
-Most likely it will end up being these commands:
+1. Install `brew`
+2. Install RVM: `curl -L https://get.rvm.io | bash -s stable`
+3. Install Ruby 2.2 (using RVM): `rvm install 2.2.0`
+4. Install Rails 4.2: `gem install rails -v 4.2.0 --no-ri --no-rdoc`
+5. Install bundler: `gem install bundler`
+6. Install [Postgress](http://postgresapp.com/). (Careful: not through homebrew)
+7. Configure your classpath for Postgress. Add something like this to your `.bashrc`: `export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"`. Otherwise, Postgress commands like `createuser` won't be found
 
-1. Install brew
-2. `curl -L https://get.rvm.io | bash -s stable`
-3. `rvm install 2.2.0`
-4. Install [postgress](http://postgresapp.com/)
-5. `gem install bundler`
-6. `gem install rails -v 4.2.0 --no-ri --no-rdoc`
-
+Here's a very useful guide to start your setup from scratch: [Install Rails](http://installrails.com/) or [Installing Rails](http://railsapps.github.io/installing-rails.html).
 
 Setup
 -------------
