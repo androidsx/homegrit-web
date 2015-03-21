@@ -7,13 +7,18 @@
             <p><%= link_to 'User count:', users_path %> <%= User.count %></p>
             <p><%= link_to 'Coupons manager', coupons_path %> <%= Coupon.count %></p>
         <% else %>
-            <h3>Client dashboard</h3>
+            <div class="jumbotron">
+              <h1>Client dashboard</h1>
+              <p><a class="btn btn-primary btn-lg">Useless button</a></p>
+            </div>
         <% end %>
     <% else %>
-        <h3>My awesome landing page (just some basic tests now)</h3>
+        <div class="jumbotron">
+          <h1>Hurray!</h1>
+          <p>Sign in/Sign up/Payments basic integration</p>
+          <p> <%= link_to 'Signup & pay', new_user_registration_path, data: { no_turbolink: true }, :class => 'btn btn-lg btn-primary' %></p>
+        </div>
 
-
-        <%= link_to 'Signup & pay', new_user_registration_path, data: { no_turbolink: true }, :class => 'btn btn-success btn-primary' %>
 
   <% end %>
   </div>
