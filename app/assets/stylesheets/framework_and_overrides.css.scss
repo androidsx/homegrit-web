@@ -1,4 +1,6 @@
 // import the CSS framework
+@import "variables";
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -38,7 +40,7 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
+//  background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
@@ -57,8 +59,8 @@ section {
   margin: 0 auto;
 }
 .authform form {
-  @extend .well;
-  @extend .well-lg;
+//  @extend .well;
+//  @extend .well-lg;
   padding-bottom: 40px;
 }
 .authform .right {
