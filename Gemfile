@@ -34,6 +34,7 @@ gem 'bootstrap-sass'
 
 # Authentication
 gem 'devise'
+gem 'switch_user'
 
 # Mailchimp
 gem 'gibbon'
