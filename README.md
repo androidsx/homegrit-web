@@ -70,8 +70,8 @@ heroku config:add \
     ADMIN_NAME="" \
     ADMIN_EMAIL="" \
     ADMIN_PASSWORD="" \
-    GMAIL_USERNAME="" \
-    GMAIL_PASSWORD="" \
+    MANDRILL_USERNAME="" \
+    MANDRILL_PASSWORD="" \
     DOMAIN_NAME="" \
     STRIPE_API_KEY="" \
     STRIPE_PUBLISHABLE_KEY="" \
