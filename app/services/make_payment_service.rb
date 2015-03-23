@@ -27,8 +27,8 @@ class MakePaymentService
   end
 
   def create_charge(customer, user)
-    price = Rails.application.secrets.product_price
-    title = Rails.application.secrets.product_title
+    price = 9999
+    title = "Test payment"
     charge = Stripe::Charge.create(
       :customer    => customer.id,
       :amount      => "#{price}",

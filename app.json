@@ -40,14 +40,6 @@
       "description": "no description",
       "required": false
     },
-    "PRODUCT_PRICE": {
-      "description": "no description",
-      "required": false
-    },
-    "PRODUCT_TITLE": {
-      "description": "no description",
-      "required": false
-    },
     "MAILCHIMP_LIST_ID": {
       "description": "no description",
       "required": false
