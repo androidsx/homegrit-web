@@ -8,6 +8,13 @@ class RegistrationsController < Devise::RegistrationsController
     respond_with self.resource
   end
 
+  def create
+    super
+    if @user.persisted?
+      UserMailer.welcome_email(@user).deliver
+    end
+  end
+
   private
 
   def sign_up_params

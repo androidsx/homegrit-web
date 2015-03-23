@@ -58,6 +58,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
+  gem 'letter_opener_web', '~> 1.2.0'
 end
 group :development, :test do
   gem 'factory_girl_rails'
