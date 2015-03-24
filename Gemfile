@@ -35,9 +35,12 @@ gem 'bootstrap-sass'
 # Authentication
 gem 'devise'
 gem 'switch_user'
+gem 'pundit'
 
 # Mailchimp
 gem 'gibbon'
+
+# Static pages
 gem 'high_voltage'
 
 # Database
