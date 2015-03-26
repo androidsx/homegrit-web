@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { :registrations => 'registrations' }
   resources :users
 
-  # Landing page on /
-  root :to => 'visitors#index'
+  get '/home' => 'dashboard#index', as: 'dashboard'
+
+  # Landing page on / using high-voltage
+  root to: 'pages#show', id: 'landing'
 end

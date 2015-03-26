@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>Sample 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="stylesheet" href="landing/css/bootstrap.css">
+        <link rel="stylesheet" href="landing/css/flat-ui.css">
+        <!-- Using only with Flat-UI (free)-->
+        <link rel="stylesheet" href="landing/css/icon-font.css">
+        <!-- end -->
+        <link rel="stylesheet" href="landing/css/animations.css">
+        <link rel="stylesheet" href="landing/css/style.css">
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+        <!-- header-1 -->
+        <header class="header-1">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar col-sm-12 navbar-fixed-top" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle"></button>
+                            <a class="brand" href="/"><img src="landing/img/logo@2x.png" width="50" height="50" alt=""> HomeGrit</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav pull-right">
+                              <% if user_signed_in? %>
+                                  <li>
+                                    <a href="/"></a>
+                                  </li>
+                                  <li><%= link_to 'DASHBOARD', dashboard_path %></li>
+                                  <li><%= link_to 'CERRAR SESION', destroy_user_session_path, :method=>'delete' %></li>
+                              <% else %>
+                                  <li>
+                                    <a href="/"></a>
+                                  </li>
+                                  <li><%= link_to 'ACCEDER', new_user_session_path %></li>
+                                  <li><%= link_to 'REGISTRARSE', new_user_registration_path, data: { no_turbolink: true } %></li>
+                              <% end %>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="header-1-sub">
+            <div id="pt-main" class="page-transitions pt-perspective">
+                <div class="pt-page pt-page-1">
+                    <div class="background">
+                        &nbsp;
+                    </div>
+                    <div class="caption">
+                        <div class="container">
+                            <h3>Recupera tu bienestar y el de los tuyos</h3>
+                            <p class="lead">
+                                Recibe un apoyo psicológico personalizado y flexible de los mejores psicólogos de tu comunidad directamente en <b>tu casa</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-page pt-page-2">
+                    <div class="background">
+                        &nbsp;
+                    </div>
+                    <div class="caption">
+                        <div class="container">
+                            <h3>Psicología personalizada en tu casa</h3>
+                            <p class="lead">
+                                Los mejores psicólogos de tu comunidad directamente en <b>tu casa</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container controls">
+                    <a class="control-prev" href="#"><span class="fui-arrow-left"> </span></a>
+                    <a class="control-next" href="#"><span class="fui-arrow-right"> </span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- content-4  -->
+        <section class="content-4">
+            <div class="container">
+                <h3>¿Por qué contratar a HomeGrit?</h3>
+                <h4>+200 psicólogos, +1000 clientes, +15 ciudades</h4>
+                <div class="row features">
+                    <div class="col-sm-4">
+                        <img src="landing/img/illustrations/retina@2x.png" alt="" width="117" height="104">
+                        <h6>En tu casa</h6>
+                        <p>
+                          Realizamos las intervenciones psicológicas en el domicilio, en el horario que mejor concilie con tus rutinas diarias
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="landing/img/illustrations/clock@2x.png" alt="" width="104" height="104">
+                        <h6>Con los mejores especialistas</h6>
+                        <p>
+                          Atención personalizada con el mejor psicólogo que se adapte a las necesidades del caso
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="landing/img/illustrations/rocket@2x.png" alt="" width="101" height="101">
+                        <h6>A precios asequibles</h6>
+                        <p>
+                            Funcionamos con una sistema de bonos mensuales que tratan de reducir el precio por sesión al máximo (media 30€/ sesión)
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- footer-6 -->
+        <footer class="footer-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div>
+                            <a class="brand" href="#">HomeGrit</a>
+                        </div>
+                    </div>
+                    <nav>
+                        <div class="col-sm-2">
+                            <h6>Sobre nosotros</h6>
+                            <ul>
+                                <li>
+                                    <a href="mailto:info@apoyopsicologicoencasa.es">Email</a>
+                                </li>
+                                <li>
+                                    625 04 73 00
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </footer>
+        </div>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="landing/js/jquery-1.10.2.min.js"></script>
+        <script src="landing/js/bootstrap.min.js"></script>
+        <script src="landing/js/modernizr.custom.js"></script>
+        <script src="landing/js/page-transitions.js"></script>
+        <script src="landing/js/easing.min.js"></script>
+        <script src="landing/js/jquery.svg.js"></script>
+        <script src="landing/js/jquery.svganim.js"></script>
+        <script src="landing/js/startup-kit.js"></script>
+        <script src="landing/js/script.js"></script>
+    </body>
+</html>
