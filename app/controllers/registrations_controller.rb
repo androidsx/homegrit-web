@@ -15,6 +15,12 @@ class RegistrationsController < Devise::RegistrationsController
     end
   end
 
+  protected
+
+  def after_update_path_for(resource)
+    dashboard_path
+  end
+
   private
 
   def sign_up_params
